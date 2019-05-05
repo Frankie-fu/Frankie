@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"href="css.css"> 
+<title>NBA</title>
+</head>
+    <body style="background-color: lightyellow"></body>
+    <div class="topnav">
+    <a href="NBA.html">Basics</a>
+    <a href="The%20mosts.html">The Mosts</a>
+    <a href="news.html">News</a>
+    <a href="Playoffs.html">Playoffs</a>
+    <a href="Teams.html">Teams</a>
+    <a class="active" href="#Scores">Scores</a>
+    <a href="Standings.html">Standings</a>
+    <a href="Players.html">Players</a>
+    <a href="About.html">About</a>
+</div>
+    <h1>NBA SCORES</h1>
+    <button><a href="https://www.nba.com/scores#/" style="font-family: cursive"><h2><i><b>nba scores</b></i></h2></a></button>
+    <br>
+    <caption>This is a website for scores</caption>
+<br>
+<img src="http://www.clker.com/cliparts/4/o/C/0/5/V/digital-scoreboard-hi.png" width="500px">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p>Which team is James Harden from?(type full name)</p>
+<input type="text1" id="myinput">
+<button onclick="testInput()">Submit</button>
+
+<script>
+    function testInput() {
+        var inputVal = document.getElementById("myinput");  
+        if (inputVal.value == "Houstan Rockets"){
+            alert("CORRECT!!!");
+        }
+        else if (inputVal.value == ""){
+            alert("You did not type in an answer. Please type an answer");
+        }
+        else if (inputVal.value == "Houstan"){
+            alert("Please type full name of the team");
+        }
+        else if (inputVal.value == "Rockets"){
+            alert("Please type full name of the team");
+        }
+        else{
+            alert("Sorry, the answer is wrong. Please try again")
+        }
+        
+    }
+</script>
+</html>

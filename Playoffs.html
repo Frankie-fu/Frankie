@@ -1,0 +1,51 @@
+<html>
+    
+<head>
+<link rel="stylesheet" type="text/css"href="css.css"> 
+<title>NBA</title>
+</head>
+    <body style="background-color:lightyellow"></body>
+    <div class="topnav">
+    <a href="NBA.html">Basics</a>
+    <a href="The%20mosts.html">The Mosts</a>
+    <a href="news.html">News</a>
+    <a class="active" href="#Payoffs">Playoffs</a>
+    <a href="Teams.html">Teams</a>
+    <a href="scores.html">Scores</a>
+    <a href="Standings.html">Standings</a>
+    <a href="Players.html">Players</a>
+    <a href="About.html">About</a>
+</div>
+    <h1>NBA PLAYOFFS</h1>
+    <button><a href="https://www.nba.com/playoffs/#/" style="font-family: cursive"><h2><i><b>nba playoffs</b></i></h2></a></button>
+    <br>
+    <caption>This is a website for playoffs</caption>
+<br>
+<img src="http://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2015%2F0608%2Fnba_g_nbab02_1296x729.jpg" width="500px">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p>Which team is Lebron James from?(type full name)</p>
+<input type="text1" id="myinput">
+<button onclick="testInput()">Submit</button>
+
+<script>
+    function testInput() {
+        var inputVal = document.getElementById("myinput");  
+        if (inputVal.value == "Los Angeles Lakers"){
+            alert("CORRECT!!!");
+        }
+        else if (inputVal.value == ""){
+            alert("You did not type in an answer. Please type an answer");
+        }
+        else if (inputVal.value == "Los Angeles"){
+            alert("Please type full name of the team");
+        }
+        else if (inputVal.value == "Lakers"){
+            alert("Please type full name of the team");
+        }
+        else{
+            alert("Sorry, the answer is wrong. Please try again")
+        }
+        
+    }
+</script>
+</html>

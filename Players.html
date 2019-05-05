@@ -1,0 +1,55 @@
+<html>
+    
+<head>
+<link rel="stylesheet" type="text/css"href="css.css">
+<title>NBA</title>
+</head>
+    <body style="background-color: lightyellow"></body>
+    <div class="topnav">
+    <a href="NBA.html">Basics</a>
+    <a href="The%20mosts.html">The Mosts</a>
+    <a href="news.html">News</a>
+    <a href="Playoffs.html">Playoffs</a>
+    <a href="Teams.html">Teams</a>
+    <a href="scores.html">Scores</a>
+    <a href="Standings.html">Standings</a>
+    <a class="active" href="#Players">Players</a>
+    <a href="About.html">About</a>
+</div>
+    <h1>NBA PLAYERS</h1>
+    <button><a href="https://www.nba.com/players" style="font-family: cursive"><h2><i><b>nba players</b></i></h2></a></button>
+    <br>
+    <caption>This is a website for players</caption>
+
+<br>
+<img src="http://getwallpapers.com/wallpaper/full/0/7/e/831905-free-nba-players-wallpapers-1920x1200-for-meizu.jpg" width="500px">
+<br>
+To see these <b><i>special</i></b> players: Go to <a href="The%20mosts.html">The Most section</a>
+   
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p>Which team is Kevin Durant from?(type full name)</p>
+<input type="text1" id="myinput">
+<button onclick="testInput()">Submit</button>
+
+<script>
+    function testInput() {
+        var inputVal = document.getElementById("myinput");  
+        if (inputVal.value == "Golden State Warriors"){
+            alert("CORRECT!!!");
+        }
+        else if (inputVal.value == ""){
+            alert("You did not type in an answer. Please type an answer");
+        }
+        else if (inputVal.value == "Golden State"){
+            alert("Please type full name of the team");
+        }
+        else if (inputVal.value == "Warriors"){
+            alert("Please type full name of the team");
+        }
+        else{
+            alert("Sorry, the answer is wrong. Please try again")
+        }
+        
+    }
+</script>
+</html>
