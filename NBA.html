@@ -1,8 +1,7 @@
 <html>
     
 <head>
-<link rel="stylesheet" type="text/css"href="css.css">
-    <title>NBA</title>
+<link rel="stylesheet" type="text/css"href="css.css">    
 </head>
 <div class="topnav">
     <a class="active" href="#home">Basics</a>
@@ -28,20 +27,20 @@
 <img src="http://www.starmometer.com/wp-content/uploads/2011/02/nba-logo.jpg" width=800px>
 <br>
     
-<button onclick="popup()" style="font-size: 50px; background-color:aquamarine;" class="nba">NBA Basic information</button>
+<button onclick="pop()" style="font-size: 50px; background-color:aquamarine;" class="nba">NBA Basic information</button>
     
     <script>
-    function popup() {
-        alert("The National Basketball Association (NBA) is a men's professional basketball league in North America; composed of 30 teams (29 in the United States and 1 in Canada). It is widely considered to be the premier men's professional basketball league in the world. The NBA is an active member of USA Basketball (USAB), which is recognized by FIBA (also known as the International Basketball Federation) as the national governing body for basketball in the United States. The NBA is one of the four major professional sports leagues in the United States and Canada. NBA players are the world's best paid athletes by average annual salary per player.")
+    function pop() {
+        alert("The National Basketball Association (NBA) is a men's professional basketball league in North America; composed of 30 teams (29 in the United States and 1 in Canada). It is widely considered to be the premier men's professional basketball league in the world. The NBA is an active member of USA Basketball (USAB) which is recognized by FIBA (also known as the International Basketball Federation) as the national governing body for basketball in the United States. The NBA is one of the four major professional sports leagues in the United States and Canada. NBA players are the world's best paid athletes by average annual salary per player.")
         
     }
         
     </script>
 <br><br>
-<button onclick="pop()" style="font-size: 50px; background-color: aquamarine;" class="nba">NBA history</button>
+<button onclick="popup()" style="font-size: 50px; background-color: aquamarine;" class="nba">NBA history</button>
     
     <script>
-    function pop() {
+    function popup() {
         alert("On this day in 1949, after a damaging three-year battle to win both players and fans, the rival Basketball Association of America (BAA) and National Basketball League (NBL) merge to form the National Basketball Association (NBA).")
         
     }
@@ -52,9 +51,10 @@
     <script>
     function out() {
         alert("James Harden;     Russel Westbrook;     Stephen Curry *2;     Kevin Durant;     Lebron James *4;     Derrick Rose;     Kobe Bryant;     Dirk Nowitski;     Steve Nash *2;     Kevin Garnett;     Tim Duncan *2;     Allen Iverson;     Shaquille O'Neal;     Karl Malone *2;     Michael Jordan *5;      David Robinson;     Hakeem Olajuwon;    Charles Barkley;     Magic Johnson *3;     Lary Bird *3;     Moses Malone *3;     Julius Erving;      Kareem Abdul-Jabbar *6;     Bill Walton;     Bob McAdoo;     Dave Cowens;     Willis Reed;     Wes Unseld;     Wilt Chamberlain *4;     Bill Russell *5;     Oscar Robertson;      Bob Pettit *2;     Bob Cousy")
+        
     }
     </script>
-   <br><br>
+<br><br>
 <canvas id="canvas" width="1000px" height="1000px"></canvas>
     <script>
 var sun = new Image ();
@@ -105,7 +105,15 @@ function draw() {
 
 init();
     </script>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+    <link rel="stylesheet" type= "text/css" href="cookie.css">
+      <canvas id="mycanvas" style="background-image:url('Basketball.png');"
+width="266" height="266">
+      </canvas>
+    <h1>The amount of basketball:</h1>
+    <p style="font-size:50"id="score"></p>
+    <script src="cookie.js"></script>
+<br><br><br><br><br><br><br><br><br><br><br>
     <p>Which team is Stephen Curry from?(type full name)</p>
 <input type="text1" id="myinput">
 <button onclick="testInput()">Submit</button>
@@ -130,30 +138,4 @@ init();
         }
         
     }
-<br><br><br><br><br><br><br><br><br><br><br>
-    <p>Which team is Stephen Curry from?(type full name)</p>
-<input type="text1" id="myinput">
-<button onclick="testInput()">Submit</button>
-
-<script>
-    function testInput() {
-        var inputVal = document.getElementById("myinput");
-        if (inputVal.value == "Golden State Warriors"){
-            alert("CORRECT!!!");
-        }
-        else if (inputVal.value == ""){
-            alert("You did not type in an answer. Please type an answer");
-        }
-        else if (inputVal.value == "Golden State"){
-            alert("Please type full name of the team");
-        }
-        else if (inputVal.value == "Warriors"){
-            alert("Please type full name of the team");
-        }
-        else{
-            alert("Sorry, the answer is wrong. Please try again")
-        }
-        
-    }
-</script>
 </html>
