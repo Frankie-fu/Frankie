@@ -87,4 +87,29 @@ width="266" height="266">
         }
         
     }
+<br>
+    <p>Which team is Russell Westbrook from?(type full name)</p>
+<input type="text1" id="myinput">
+<button onclick="testInput()">Submit</button>
+
+<script>
+    function testInput() {
+        var inputVal = document.getElementById("myinput");  
+        if (inputVal.value == "Oklahoma City Thunder"){
+            alert("CORRECT!!!");
+        }
+        else if (inputVal.value == ""){
+            alert("You did not type in an answer. Please type an answer");
+        }
+        else if (inputVal.value == "Oklahoma City"){
+            alert("Please type full name of the team");
+        }
+        else if (inputVal.value == "Thunder"){
+            alert("Please type full name of the team");
+        }
+        else{
+            alert("Sorry, the answer is wrong. Please try again")
+        }
+        
+    }
 </html>
