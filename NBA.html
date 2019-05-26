@@ -14,6 +14,7 @@
     <a href="Standings.html">Standings</a>
     <a href="Players.html">Players</a>
     <a href="About.html">About</a>
+    <a href="cookie.html" target="_blank">Basketball Clicker</a>
 </div>
     <body style="background-color:lightyellow"></body>   
     <button onclick="NBA()" style="font-size:200px;font-family: fantasy">NBA</button>
@@ -56,18 +57,10 @@
     }
     </script>
 <br><br>
-        <link rel="stylesheet" type= "text/css" href="cookie.css">
-      <canvas id="mycanvas" style="background-image:url('Basketball.png');"
-width="266" height="266">
-      </canvas>
-    <h1>The amount of basketball:</h1>
-    <p style="font-size:50"id="score"></p>
-    <div id="store"></div>
-    <script src="cookie.js"></script>
-    <audio id="myAudio">
-<source src="click.ogg" type="audio/ogg">
-</audio>
-
+<p>Which team is Russell Westbrook from?(type full name)</p>
+<input type="text1" id="myinput">
+<button onclick="Input()">Submit</button>
+    <br><br><br>
 <script>
     function testInput() {
         var inputVal = document.getElementById("myinput");  
