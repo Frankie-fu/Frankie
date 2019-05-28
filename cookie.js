@@ -34,6 +34,26 @@ function draw(event) {
         increment=5;
         award(increment,"gold")
     }
+    if (cookies == 331) {
+        increment=6;
+        award(increment,"green")
+    }
+    if (cookies == 535) {
+        increment=7;
+        award(increment,"blue")
+    }
+    if (cookies == 878) {
+        increment=8;
+        award(increment,"gray")
+    }
+    if (cookies == 990) {
+        increment=9;
+        award(increment,"green")
+    }
+    if (cookies == 1980) {
+        increment=10;
+        award(increment,"gold")
+    }
     function award(increment,colour) {
     mytab = "<table><tr>";
     mytab = mytab + "<td style='background-color:" + colour +
@@ -44,22 +64,25 @@ function draw(event) {
     mydiv = document.getElementById("store");
     mydiv.innerHTML = mytab;
 }
+    
+    if (cookies == 15) {
+        people("Lebron James", 15)
+    }
     if (cookies == 53) {
-        Lebron()
+        people("Kyrie Irving", 53)
     }
-    
-    function Lebron() {
-        var myptag = document.getElementById("text");
-        myptag.innerHTML="Lebron James: Award for 53 points"
+    if (cookies == 101) {
+        people("Giannis Antetokounmpo", 101)
+    } 
+    if (cookies == 193) {
+        people("Kevin Durant", 193)
     }
-    
-    if (cookies == 80) {
-        Durant()
+    if (cookies == 5000) {
+        people("Michael Jordan", "infinite(winning)")
     }
-    
-    function Durant() {
-        var mytag = document.getElementById("t");
-        mytag.innerHTML="Kevin Durant: Award for 80 points"
+    function people(person, points) {
+        var mytag = document.getElementById("nba");
+        mytag.innerHTML = person + ": Award for " + points + " points!!!"
     }
     
     var alpha=1.0;
