@@ -44,6 +44,24 @@ function draw(event) {
     mydiv = document.getElementById("store");
     mydiv.innerHTML = mytab;
 }
+    if (cookies == 53) {
+        Lebron()
+    }
+    
+    function Lebron() {
+        var myptag = document.getElementById("text");
+        myptag.innerHTML="Lebron James: Award for 53 points"
+    }
+    
+    if (cookies == 80) {
+        Durant()
+    }
+    
+    function Durant() {
+        var mytag = document.getElementById("t");
+        mytag.innerHTML="Kevin Durant: Award for 80 points"
+    }
+    
     var alpha=1.0;
     y = event.clientY
     interval = setInterval (function (){
